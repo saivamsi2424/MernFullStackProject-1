@@ -1,0 +1,189 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+
+.app-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.info-text {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 25px;
+}
+
+
+.fetch-btn {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.fetch-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 114, 255, 0.6);
+}
+
+.backend-message {
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 12px 18px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  animation: fadeUp 0.6s ease;
+}
+
+.verify-section {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.name-input {
+  width: 80%;
+  max-width: 300px;
+  padding: 10px 15px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  transition: 0.3s ease;
+  outline: none;
+}
+
+.name-input:focus {
+  border-color: #00c6ff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+}
+
+.verify-btn {
+  background: linear-gradient(90deg, #11998e, #38ef7d);
+  border: none;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.verify-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(56, 239, 125, 0.6);
+}
+.app-container {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+
+.fetch-btn, .verify-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.fetch-btn:hover, .verify-btn:hover {
+  background-color: #0056b3;
+}
+
+.name-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.backend-message {
+  margin-top: 20px;
+  font-weight: bold;
+  color: green;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    width: 95%;
+    padding: 30px 20px;
+  }
+
+  .fetch-btn,
+  .verify-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .name-input {
+    width: 100%;
+    font-size: 15px;
+  }
+}
